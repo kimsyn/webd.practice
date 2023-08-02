@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-4레이아웃</title>
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrap {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #header{
+        width: 100%;
+        display: flex;
+    }
+
+    #header .logo{
+        width: 20%;
+        height: 100px;
+        background-color: red;
+    }
+
+    #header .nav{
+        width: 80%;
+        height: 100px;
+        background-color: bisque;
+    }
+
+    #slider {
+        width: 100%;
+        height: 300px;
+        background-color: azure;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+    }
+
+    #content .content1{
+        width: 33.3%;
+        height: 200px;
+        background-color: mediumslateblue;
+    }
+
+    #content .content2{
+        width: 33.3%;
+        height: 200px;
+        background-color: mediumorchid;
+    }
+
+
+    #content .content3{
+        width: 33.3%;
+        height: 200px;
+        background-color: mediumturquoise;
+    }
+
+    #footer {
+        width: 100%;
+        display: flex;
+    }
+
+    #footer .footer1{
+        width: 80%;
+    }
+
+    #footer .footer1 .footer1-1 {
+        width: 100%;
+        height: 50px;
+        background-color: lightcyan;
+    }
+
+    
+    #footer .footer1 .footer1-2 {
+        width: 100%;
+        height: 50px;
+        background-color: lightslategray;
+    }
+    
+    
+    #footer .footer2{
+        width: 20%;
+        height: 100px;
+        background-color: pink;
+
+    }
+
+    </style>
+</head>
+<body>
+    <!--전체 wrap공간 생성-->
+    <div id="wrap">
+
+    <!--header-->
+        <header id="header">
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
+        </header>
+    <!--article-->
+        <article id="slider"></article>
+    
+    <!--main-->
+        <main id="content">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </main>
+    
+    <!--footer-->
+        <footer id="footer">
+            <div class="footer1">
+                <div class="footer1-1"></div>
+                <div class="footer1-2"></div>
+            </div>
+            <div class="footer2"></div>
+        </footer>
+    </div>
+
+</body>
+</html>
