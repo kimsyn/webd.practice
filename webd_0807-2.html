@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인 기능사 레이아웃 C-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 1000px;
+            display: flex;
+        }
+
+        #aside{
+            width: 20%;
+            height: 650px;
+            background-color: lemonchiffon;
+        }
+        #aside .logo{
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+        #aside .nav{
+            width: 100%;
+            height: 550px;
+            background-color: orangered
+        }
+        #main{
+            width: 80%;
+        }
+
+        #main .slider{
+            width: 100%;
+            height: 350px;
+            background-color: yellowgreen;
+        }
+        #main .contents{
+            width: 100%;
+            display: flex;
+        }
+
+        #main .contents .content1{
+            width: 33.3333%;
+            height: 200px;
+            background-color: salmon;
+        }
+        #main .contents .content2{
+            width: 33.3333%;
+            height: 200px;
+            background-color: slateblue;
+        }
+        #main .contents .content3{
+            width: 33.3333%;
+            height: 200px;
+            background-color: saddlebrown;
+        }
+        #main .footer{
+            width: 100%;
+            display: flex;
+        }
+
+        #main .footer .footer-1 {
+            width: 80%;
+            height: 100px;
+            background-color: burlywood;
+        }
+
+        
+        #main .footer .footer-2 {
+            width: 20%;
+        }
+
+        #main .footer .footer-2 .footer-2-1{
+            width: 100%;
+            height: 50px;
+            background-color: mediumblue;
+        }
+        #main .footer .footer-2 .footer-2-2{
+            width: 100%;
+            height: 50px;
+            background-color: mediumorchid;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
+        </aside>
+        <main id="main">
+            <article class="slider"></article>
+            <section class="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
+                <div class="content3"></div>
+            </section>
+            <footer class="footer">
+                <div class="footer-1"></div>
+                <div class="footer-2">
+                    <div class="footer-2-1"></div>
+                    <div class="footer-2-2"></div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
