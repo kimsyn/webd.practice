@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹스토리보이 레이아웃 E-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 100%;
+        }
+
+        #main{
+            width: 100%;
+            height: calc(100vh - 120px);
+            display: flex;
+        }
+
+        #header{
+            width: 200px;
+            height: 100%;
+        }
+
+        #header .logo{
+            width: 100%;
+            height: 10%;
+            background-color: salmon;
+        }
+        #header .nav{
+            width: 100%;
+            height: 90%;
+            background-color: sandybrown;
+        }
+
+
+        #contents{
+            width: 400px;
+            height: 100%;
+
+        }
+
+        #contents .banner{
+            width: 100%;
+            height: 15%;
+            background-color: lightyellow;
+        }
+        #contents .notice{
+            width: 100%;
+            height: 35%;
+            background-color: lightgoldenrodyellow;
+        }
+        #contents .gallery{
+            width: 100%;
+            height: 35%;
+            background-color: lightseagreen;
+        }
+        #contents .link{
+            width: 100%;
+            height: 15%;
+            background-color: lightgray;
+        }
+
+        #slider{
+            width: calc(100% - 600px);
+            height: 100%;
+            background-color: lightcoral;
+        }
+
+        #footer{
+            width: 100%;
+            display: flex;
+        }
+
+        #footer .footer-1{
+            width: 20%;
+            height: 120px;
+            background-color: lightslategrey;
+        }
+        #footer .footer-2{
+            width: 80%;
+            height: 120px;
+            background-color: lightcyan;
+        }
+
+        #footer .footer-2 .footer2-1{
+            width: 100%;
+            height: 60px;
+            background-color: darkseagreen;
+        }
+        #footer .footer-2 .footer2-1{
+            width: 100%;
+            height: 60px;
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+        <main id="main">
+
+            <header id="header">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </header>
+            <!--헤더영역-->
+            <section id="contents">
+                <article class="banner"></article>
+                <article class="notice"></article>
+                <article class="gallery"></article>
+                <article class="link"></article>
+            </section>
+            <!--섹션 영역-->
+            <article id="slider"></article>
+            <!--아티클영역-->
+
+        </main>
+
+        <footer id="footer">
+            <div class="footer-1"></div>
+            <div class="footer-2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
+        </footer>
+        <!--푸터 영역-->
+    </div>
+</body>
+</html>

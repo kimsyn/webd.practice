@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 100%;
+    
+        }
+
+        #main{
+            width: 100%;
+            height: 750px;
+            display: flex;
+        }
+
+        #header{
+            width: 200px;
+        }
+
+        #header .logo{
+            width: 100%;
+            height: 100px;
+            background-color: orange;
+        }
+        #header .nav{
+            width: 100%;
+            height: 650px;
+            background-color: orangered;
+        }
+
+        #contents{
+            width: 400px;
+        }
+
+        #contents .news{
+            width: 100%;
+            height: 300px;
+            background-color: violet;
+        }
+        #contents .gallery{
+            width: 100%;
+            height: 300px;
+            background-color: chartreuse;
+        }
+        #contents .link{
+            width: 100%;
+            height: 150px;
+            background-color: sienna;
+        }
+
+        #slider{
+            width: calc(100% - 600px);
+            height: 750px;
+            background-color: goldenrod;
+        }
+        #footer{
+            width: 100%;
+            display: flex;
+        }
+
+        #footer .footer1{
+            width: 20%;
+            height: 100px;
+            background-color: lime;
+        }
+        #footer .footer2{
+            width: 60%;
+            height: 100px;
+            background-color: navy;
+        }
+        #footer .footer3{
+            width: 20%;
+            height: 100px;
+            background-color: grey;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+<div id="wrap"></div>
+<main id="main">
+    <header id="header">
+        <h1 class="logo"></h1>
+        <nav class="nav"></nav>
+    </header>
+    <!--헤더영역-->
+    <section id="contents">
+        <article class="news"></article>
+        <article class="gallery"></article>
+        <article class="link"></article>
+    </section>
+    <!--콘텐츠영역-->
+    <article id="slider"></article>
+    <!--슬라이드 영역-->
+</main>
+<footer id="footer">
+    <div class="footer1"></div>
+    <div class="footer2"></div>
+    <div class="footer3"></div>
+</footer> 
+    <!--푸터 영역-->
+</body>
+</html>
