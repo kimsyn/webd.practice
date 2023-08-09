@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #aside{
+            width: 200px;
+        }
+
+        #aside .logo{
+            width: 100%;
+            height: 100px;
+            background-color: mediumaquamarine;
+        }
+        #aside .nav{
+
+            width: 100%;
+            height: 750px;
+            background-color: aquamarine;
+        }
+
+        #main{
+            width: calc(100% - 200px);
+        }
+
+        #slider{
+            width: 100%;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        #slider .link{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100px;
+            height: 300px;
+            background-color: greenyellow;
+        }
+
+        #banner{
+            width: 100%;
+            height: 200px;
+            background-color: green;
+        }
+
+        #contents{
+            width: 100%;
+            height: 250px;
+            background-color: orange;
+        }
+
+        #footer{
+            width: 100%;
+            display: flex;
+
+        }
+
+        #footer .footer1{
+            width: 20%;
+            height: 120px;
+            background-color: pink;
+        }
+
+        #footer .footer2{
+            width: 80%;
+
+        }
+
+        #footer .footer2 .footer2-1{
+            width: 100%;
+            height: 60px;
+            background-color: cornflowerblue;
+        }
+
+        #footer .footer2 .footer2-2{
+            width: 100%;
+            height: 60px;
+            background-color: salmon;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
+        </aside>
+        <!--aside 영역 -->
+        <main id="main">
+            <article id="slider">
+                <div class="link"></div>
+            </article>
+            <article id="banner"></article>
+            <article id="contents"></article>
+        </main>
+        <!--main 영역-->
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
