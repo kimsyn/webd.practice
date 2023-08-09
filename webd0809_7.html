@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 E-4</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrap{
+        width: 100%;
+    }
+
+    #main{
+        width: 100%;
+        height: calc(100vh - 120px);
+        display: flex;
+    }
+
+    #header{
+        width: 200px;
+        height: 100%;
+    }
+
+    #header .logo{
+        width: 100%;
+        height: 10%;
+        background-color: goldenrod;
+    }
+    #header .nav{
+        width: 100%;
+        height: 90%;
+        background-color: palevioletred;
+    }
+
+
+
+    #contents{
+        width: 400px;
+        height: 100%;
+    }
+
+    #contents .banner{
+        width: 100%;
+        height: 15%;
+        background-color: greenyellow;
+    }
+    #contents .news{
+        width: 100%;
+        height: 35%;
+        background-color: skyblue;
+    }
+    #contents .gallery{
+        width: 100%;
+        height: 35%;
+        background-color: wheat;
+    }
+    #contents .link{
+        width: 100%;
+        height: 15%;
+        background-color: indianred;
+    }
+
+    #slider{
+        width: calc(100% - 600px);
+        height: 100%;
+        background-color: green;  
+    }
+
+    #footer{
+        width: 100%;
+        display: flex;
+    }
+
+    #footer .footer1{
+        width: 200px;
+        height: 120px;
+        background-color: papayawhip;
+    }
+    #footer .footer2{
+        width: calc( 100% - 400px);
+        height: 120px;
+        background-color: palegreen;
+    }
+
+    #footer .footer2 .footer2-1{}
+        #footer .footer2 .footer2-1{}
+    #footer .footer3{
+        width: 200px;
+        height: 120px;
+        background-color: peachpuff;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <header id="header">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </header>
+            <section id="contents">
+                <article class="banner"></article>
+                <article class="news"></article>
+                <article class="gallery"></article>
+                <article class="link"></article>
+            </section>
+            <article id="slider"></article>
+        </main>
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+               <div class="footer2-1"></div>
+               <div class="footer2-2"></div>
+            <div class="footer3"></div>
+        </footer>
+    </div>
+</body>
+</html>
