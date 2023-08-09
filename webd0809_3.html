@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #aside{
+            width: 200px;
+            position: relative;
+        }
+
+        #aside .logo{
+            width: 100%;
+            height: 100px;
+            background-color: mediumvioletred;
+        }
+        #aside .nav{
+            width: 100%;
+            height: 700px;
+            background-color: mediumseagreen;
+           /* position: relative;*/
+        }
+
+       /* #aside .nav .nav-menu{
+        
+            width: 80%;
+            height: 300px;
+            top: 10px;
+            left: 10px;
+            position: absolute;
+            background-color: pink;
+        } */
+
+
+        #main{
+            width: calc(100% - 200px);
+            height: 800px;
+            background-color: lavender;
+        }
+
+        #slider{
+            width: 100%;
+            height: 400px;
+            background-color: magenta;
+        }
+        #link{
+            width: 100%;
+            height: 150px;
+            background-color: maroon;
+        }
+        #contents{
+            width: 100%;
+            display: flex;
+        }
+
+        #contents .content1{
+            width: 50%;
+            height: 250px;
+            background-color: blue;
+        }
+        #contents .content2{
+            width: 50%;
+            height: 250px;
+            background-color: blueviolet;
+        }
+        #footer{
+            width: 100%;
+            display: flex;
+        }
+
+        #footer .footer1{
+            width: 20%;
+            height: 150px;
+            background-color: lightblue;
+        }
+        #footer .footer2{
+            width: 60%;
+        }
+
+        #footer .footer2 .footer2-1{
+            width: 100%;
+            height: 75px;
+            background-color: hotpink;
+        }
+        #footer .footer2 .footer2-2{
+            width: 100%;
+            height: 75px;
+            background-color: lightseagreen;
+        }
+        #footer .footer3{
+            width: 20%;
+            height: 150px;
+            background-color: lightblue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        
+        <aside id="aside">
+            <h1 class="logo"></h1>
+            <nav class="nav"> </nav>
+        </aside>
+        <!--aside 영역-->
+
+        <main id="main">
+            <article id="slider"></article>
+            <article id="link"></article>
+            <article id="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
+            </article>
+        </main>
+        <!--main 영역-->
+        
+        <footer id="footer">
+        <div class="footer1"></div>
+        <div class="footer2">
+            <div class="footer2-1"></div>
+            <div class="footer2-2"></div>
+            </div>
+        <div class="footer3"></div>
+        </footer>
+        <!--footer 영역-->
+
+    </div>
+</body>
+</html>
