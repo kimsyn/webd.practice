@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'GmarketSans';
+    }
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    display: flex;
+}
+#header .logo {
+    width: 20%;
+    height: 100px;
+    background-color: #efefef;
+}
+#header .nav {
+    width: 80%;
+    height: 100px;
+    background-color: #e3e3e3;
+}
+#slider {
+    width: 100%;
+    height: 300px;
+    background-color: #d9d9d9;
+}
+#contents {
+    width: 100%;
+    display: flex;
+}
+#contents .content1 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #d1d1d1;
+}
+#contents .content2 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #c7c7c7;
+}
+#contents .content3 {
+    width: 33.3333%;
+    height: 200px;
+    background-color: #bcbcbc;
+}
+#footer {
+    width: 100%;
+    display: flex;
+}
+#footer .footer1 {
+    width: 20%;
+    height: 100px;
+    background-color: #b1b1b1;
+}
+#footer .footer2 {
+    width: 60%;
+    height: 100px;
+    background-color: #a3a3a3;
+}
+#footer .footer3 {
+    width: 20%;
+    height: 100px;
+    background-color: #9d9d9d;
+}
+
+/*slider*/
+.sliderWrap {
+    position: relative;
+}
+.sliderWrap .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sliderWrap .slider img {
+    vertical-align: top;
+}
+.sliderWrap .slider span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.sliderWrap > div{
+    display: none;
+}
+
+.sliderWrap > div:first-child{
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </header>
+            <!-- //header -->
+    
+            <article id="slider">
+                <div class="sliderWrap">
+                    <div class="slider s1">
+                        <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider01.jpg" alt="이미지 설명">
+                        <span>이미지1</span>
+                    </div>
+                    <div class="slider s2">
+                        <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg" alt="이미지 설명">
+                        <span>이미지2</span>
+                    </div>
+                    <div class="slider s3">
+                        <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider03.jpg" alt="이미지 설명">
+                        <span>이미지3</span>
+                    </div>
+                </div>
+            </article>
+            <!-- //slider -->
+    
+            <main id="contents">
+                <section class="content1"></section>
+                <section class="content2"></section>
+                <section class="content3"></section>
+            </main>
+            <!-- //contents -->
+    
+            <footer id="footer">
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+                <div class="footer3"></div>
+            </footer>
+            <!-- //footer -->
+        </div>
+        <!-- //wrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--script-->
+        <script>
+            $(function(){
+                let currentIndex = 0; //현재 이미지 
+
+                setInterval(function(){  //함수를 일정한 간격으로 실행시켜라
+                    let nextIndex = (currentIndex + 1) % 3;
+                    // 1 2 3 -> 3이되는순간 흰백지! 0이되어야함. 해서, 나누기 3을 해서
+                    //나머지를 도출시켜야 0,1,2로 무한반복이됨. 3이나오는 순간 끝이나니까!
+
+                    $(".slider").eq(currentIndex).fadeOut(); // 0 1 2 0 1 2 img 사라짐 무한루프
+                    $(".slider").eq(nextIndex).fadeIn();  // 1 2 0 1 2 0 img 나타남 무한루프
+
+                    currentIndex = nextIndex;
+                }, 1000);
+
+                });
+
+        </script>
+</body>
+</html>
